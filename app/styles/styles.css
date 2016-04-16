@@ -1,0 +1,17 @@
+#viewportSizeExtension{
+  background-color: rgba(0,0,0,0.5);
+  border-bottom-left-radius: 5px;
+  color: white;
+  font-size: 12px;
+  opacity: 0;
+  padding: 3px 7px;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 1s;
+  z-index: 2147483647;
+}
+#viewportSizeExtension.visible{
+  opacity: 1;
+}

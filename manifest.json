@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Viewport Size",
+  "description": "Displays viewport dimentions on window resize when Dev Tools opened.",
+  "version": "0.0.1",
+  "icons": {
+    "16": "app/icons/icon16.png",
+    "32": "app/icons/icon32.png",
+    "48": "app/icons/icon48.png",
+    "128": "app/icons/icon128.png",
+    "256": "app/icons/icon256.png",
+    "512": "app/icons/icon512.png"
+  },
+  "devtools_page": "devtools.html",
+  "background": {
+    "scripts": [
+      "app/scripts/background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "css": ["app/styles/styles.css"],
+    "js": ["app/scripts/script.js"],
+    "run_at": "document_end"
+  }]
+}
