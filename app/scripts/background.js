@@ -1,4 +1,4 @@
-var INIT_EVT = 'app/scripts/events/init.js';
+var INIT_EVT    = 'app/scripts/events/init.js';
 var DESTROY_EVT = 'app/scripts/events/destroy.js';
 var connections = {};
 
