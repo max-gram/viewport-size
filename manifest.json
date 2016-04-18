@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Viewport Size",
   "description": "Displays viewport dimensions on window resize when Dev Tools opened.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icons": {
     "16": "app/icons/icon16.png",
     "32": "app/icons/icon32.png",

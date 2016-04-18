@@ -1,8 +1,15 @@
 var popup = {
   init: function(){
-    var el        =  document.createElement('div');
-    el.id         = 'viewportSizeExtension';
-    this.el       = document.body.appendChild( el );
+    var DIV_ID    = 'ViewportSizeExtension';
+    var dom       = document.getElementById(DIV_ID);
+
+    if(!dom){
+      var el      = document.createElement('div');
+      el.id       = DIV_ID;
+      this.el     = document.body.appendChild( el );
+    }else{
+      this.el     = dom;
+    }
 
     this.popupTimeout = null;
     this.destroy      = this.destroy.bind(this);

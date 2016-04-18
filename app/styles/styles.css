@@ -1,4 +1,4 @@
-#viewportSizeExtension{
+#ViewportSizeExtension{
   -webkit-font-smoothing: antialiased;
   background-color: rgba(0,0,0,0.5);
   border-bottom-left-radius: 5px;
@@ -15,6 +15,6 @@
   transition: opacity 1s;
   z-index: 2147483647;
 }
-#viewportSizeExtension.visible{
+#ViewportSizeExtension.visible{
   opacity: 1;
 }
